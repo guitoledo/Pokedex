@@ -1,3 +1,4 @@
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { PokeApiService } from './../../service/poke-api.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -14,7 +15,8 @@ export class PokeListComponent implements OnInit {
   public apiError: boolean= false;
 
   constructor(
-    private PokeApiService: PokeApiService
+    private PokeApiService: PokeApiService,
+
   ) { }
 
   ngOnInit(): void {
@@ -36,5 +38,8 @@ export class PokeListComponent implements OnInit {
 
     this.getAllPokemons = filter
   }
+
+  
+  
 
 }
