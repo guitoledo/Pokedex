@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 //Modules
 import { PagesModule } from './pages/pages.module';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 //Components
@@ -20,6 +21,7 @@ import { PagesModule } from './pages/pages.module';
     AppRoutingModule,
     PagesModule,
     HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
